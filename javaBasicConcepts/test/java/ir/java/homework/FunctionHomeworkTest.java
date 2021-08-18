@@ -66,51 +66,16 @@ class FunctionHomeworkTest {
         System.out.println();
     }
 
-    @ParameterizedTest
-    @ValueSource(ints = {0, 5, 6, 8, 2, 14, 6})
-
-    public void test_switch(int num) {
-
-
-        switch (num) {
-            case 1:
-                System.out.println("sunday");
-                break;
-            case 2:
-                System.out.println("monday");
-                break;
-            case 3:
-                System.out.println("tuesday");
-                break;
-            case 4:
-                System.out.println("wednesday");
-                break;
-            case 5:
-                System.out.println("thursday");
-                break;
-            case 6:
-                System.out.println("friday");
-                break;
-            case 7:
-                System.out.println("saturday");
-                break;
-
-            default:
-                System.out.println("THe Num You Add , Is Fuels");
-
-        }
+    @Test
+    public void test_getDay() {
+        assertEquals(DayType.UNKNOWN, underTest.getDay(0));
+        assertEquals(DayType.SUNDAY, underTest.getDay(1));
+        assertEquals(DayType.UNKNOWN, underTest.getDay(-1));
     }
 
-    @ParameterizedTest
-    @ValueSource(ints = {1, 2})
-    public void multiplication(int a, int b) {
-
-        for (a = 1; a <= 10; a++) {
-            for (b = 1; b <= 10; b++) {
-                System.out.print(String.valueOf(a * b));
-            }
-            System.out.println();
-        }
+    @Test
+    public void test_createMultiplicationTable() {
+        System.out.println(underTest.createMultiplicationTable());
     }
 
 

@@ -40,12 +40,33 @@ public class FunctionHomework {
         return result;
     }
 
-    public static void main(String[] args) {
+    public String createMultiplicationTable() {
+        StringBuilder result = new StringBuilder();
+
         for (int a = 1; a <= 10; a++) {
             for (int b = 1; b <= 10; b++) {
-                System.out.print(String.valueOf(a+"*"+b+"="+b * a + "\t"));
+                result.append(a)
+                        .append("*")
+                        .append(b)
+                        .append("=")
+                        .append(b * a)
+                        .append("\t");
             }
-            System.out.println();
+            result.append("\n");
         }
+        return result.toString();
+    }
+
+    public DayType getDay(int numberOfDay) {
+        return switch (numberOfDay) {
+            case 1 -> DayType.SUNDAY;
+            case 2 -> DayType.MONDAY;
+            case 3 -> DayType.TUESDAY;
+            case 4 -> DayType.WEDNESDAY;
+            case 5 -> DayType.THURSDAY;
+            case 6 -> DayType.FRIDAY;
+            case 7 -> DayType.SATURDAY;
+            default -> DayType.UNKNOWN;
+        };
     }
 }
