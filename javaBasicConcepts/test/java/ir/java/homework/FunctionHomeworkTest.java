@@ -6,6 +6,9 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import javax.swing.plaf.IconUIResource;
 
+import java.util.Arrays;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class FunctionHomeworkTest {
@@ -78,6 +81,11 @@ class FunctionHomeworkTest {
         System.out.println(underTest.createMultiplicationTable());
     }
 
-
+    @Test
+    void name() {
+        int a[] = {1,2,3};
+        underTest.changeList(a);
+        Arrays.stream(a).forEach(System.out::println);
+    }
 }
 

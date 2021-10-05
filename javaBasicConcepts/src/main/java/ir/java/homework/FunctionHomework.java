@@ -1,5 +1,7 @@
 package ir.java.homework;
 
+import java.util.Arrays;
+
 public class FunctionHomework {
 
     public boolean isPrime(int num) {
@@ -68,5 +70,13 @@ public class FunctionHomework {
             case 7 -> DayType.SATURDAY;
             default -> DayType.UNKNOWN;
         };
+    }
+    public void changeList(int[] a){
+        for (int i = 0; i < a.length; i++) {
+            a[i] = a[i]*10;
+        }
+
+        System.out.println("Method");
+        Arrays.stream(a).forEach(System.out::println);
     }
 }
