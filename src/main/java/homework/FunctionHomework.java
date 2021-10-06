@@ -1,4 +1,4 @@
-package ir.java.homework;
+package homework;
 
 import java.util.Arrays;
 
@@ -59,18 +59,6 @@ public class FunctionHomework {
         return result.toString();
     }
 
-    public DayType getDay(int numberOfDay) {
-        return switch (numberOfDay) {
-            case 1 -> DayType.SUNDAY;
-            case 2 -> DayType.MONDAY;
-            case 3 -> DayType.TUESDAY;
-            case 4 -> DayType.WEDNESDAY;
-            case 5 -> DayType.THURSDAY;
-            case 6 -> DayType.FRIDAY;
-            case 7 -> DayType.SATURDAY;
-            default -> DayType.UNKNOWN;
-        };
-    }
     public void changeList(int[] a){
         for (int i = 0; i < a.length; i++) {
             a[i] = a[i]*10;

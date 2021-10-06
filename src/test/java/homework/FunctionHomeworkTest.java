@@ -1,13 +1,11 @@
-package ir.java.homework;
+package homework;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import javax.swing.plaf.IconUIResource;
 
 import java.util.Arrays;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -67,13 +65,6 @@ class FunctionHomeworkTest {
             System.out.print("[" + i + "] ");
         }
         System.out.println();
-    }
-
-    @Test
-    public void test_getDay() {
-        assertEquals(DayType.UNKNOWN, underTest.getDay(0));
-        assertEquals(DayType.SUNDAY, underTest.getDay(1));
-        assertEquals(DayType.UNKNOWN, underTest.getDay(-1));
     }
 
     @Test

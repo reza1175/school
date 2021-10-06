@@ -1,6 +1,6 @@
-package ir.java.application;
+package application;
 
-import ir.java.homework.FunctionHomework;
+import homework.FunctionHomework;
 
 public class Main {
     /*
