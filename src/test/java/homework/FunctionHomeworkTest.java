@@ -3,15 +3,12 @@ package homework;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-
+import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class FunctionHomeworkTest {
     FunctionHomework underTest = new FunctionHomework();
-
 
     @ParameterizedTest
     @ValueSource(ints = {20, 30, 45, 56, 9, 15, 35, 36, 99, 91})
@@ -79,4 +76,3 @@ class FunctionHomeworkTest {
         Arrays.stream(a).forEach(System.out::println);
     }
 }
-

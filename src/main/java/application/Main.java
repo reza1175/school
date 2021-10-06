@@ -3,13 +3,7 @@ package application;
 import homework.FunctionHomework;
 
 public class Main {
-    /*
-        Primitive data Type
-    * int - boolean - char -long- float- double- byte- ?
-    int a= 10;
-    String name = new String();
-    instance
-    * */
+
     public static void main(String[] args) {
         FunctionHomework homework = new FunctionHomework();
 
